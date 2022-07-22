@@ -6,7 +6,7 @@ public class Main {
         System.out.println();
         System.out.println(manager.average());
         System.out.println();
-        SalesManager manager1 = new SalesManager(new int[] {23, 5, 11});
+        SalesManager manager1 = new SalesManager(new long[] {23, 5, 11});
         System.out.println(manager1.average());
     }
 }

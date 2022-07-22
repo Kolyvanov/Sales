@@ -15,15 +15,15 @@ public class SalesManager {
         return max;
     }
 
-    public int average() {
-        int min = sales[0];
-        for (int sale: sales) {
+    public long average() {
+        long min = sales[0];
+        for (long sale: sales) {
             if (sale < min) {
                 min = sale;
             }
         }
-        int sum = 0;
-        for (int sale: sales) {
+        long sum = 0;
+        for (long sale: sales) {
             sum += sale;
         }
         return (sum - max() - min)/ (sales.length -2);
